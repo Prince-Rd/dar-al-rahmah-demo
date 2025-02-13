@@ -1,13 +1,20 @@
-import { div } from "framer-motion/client";
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+
+// Import all images
+import menuIcon from "../assets/img/MenuIcon.png";
+import logo from "../assets/img/logo.svg";
+import urbenIcon from "../assets/img/urben-icon.svg";
+import quanitiveIcon from "../assets/img/quanitive-icon.svg";
+import urbenDesignIcon from "../assets/img/urben-design-icon.svg";
+import engManagementIcon from "../assets/img/eng-management-icon.svg";
+import arrowIconMobileMenu from "../assets/img/ArrowIconMobileMenu.svg";
+import arrowIconWhite from "../assets/img/ArrowIconWhite.svg";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
-
-  const menuIcon = "src/assets/img/MenuIcon";
 
   return (
     <header className="fixed w-full z-50 bg-opacity-0 border-b border-white/10">
@@ -16,28 +23,24 @@ function Header() {
           <div className="md:m-base-m mx-6 flex justify-between w-full items-center">
             {/* Mobile Menu Button */}
             <button
-              className="md:hidden text-primary z-50  text-3xl"
+              className="md:hidden text-primary z-50 text-3xl"
               onClick={() => setIsOpen(!isOpen)}
             >
               {isOpen ? (
-                <img className="w-5" src="/src/assets/img/MenuIcon.png" />
+                <img className="w-5" src={menuIcon} alt="Menu Icon" />
               ) : (
-                <img className="w-5" src="/src/assets/img/MenuIcon.png" />
+                <img className="w-5" src={menuIcon} alt="Menu Icon" />
               )}
             </button>
             {/* Logo */}
             <div>
               <a href="#">
-                <img
-                  className="w-40 md:w-64"
-                  src="/src/assets/img/logo.svg"
-                  alt="logo"
-                />
+                <img className="w-40 md:w-64" src={logo} alt="logo" />
               </a>
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex md:ml-  xl:justify-between font-camel">
+            <div className="hidden md:flex md:ml- xl:justify-between font-camel">
               <ul className="flex items-center md:gap-8 lg:gap-20 font-camel font-bold text-primary">
                 <li>
                   <NavLink
@@ -63,17 +66,14 @@ function Header() {
                     مجالاتنـا
                   </NavLink>
                   {isDropdownOpen && (
-                    <div className="absolute  right-0 mt-0 w-48 bg-white rounded-l-lg rounded-b-lg shadow-lg  ">
-                      <div className="py-2 px-3 divide-y ">
+                    <div className="absolute right-0 mt-0 w-48 bg-white rounded-l-lg rounded-b-lg shadow-lg">
+                      <div className="py-2 px-3 divide-y">
                         <NavLink
                           to="/fields/UrbanPlanning"
                           className="block px- py-2 text-sm text-tertiary hover:bg-gray-100"
                         >
                           <div className="flex justify-start gap-2">
-                            <img
-                              src="/src/assets/img/urben-icon.svg"
-                              alt="icon"
-                            />
+                            <img src={urbenIcon} alt="icon" />
                             <div>التخطيط الحضاري</div>
                           </div>
                         </NavLink>
@@ -82,10 +82,7 @@ function Header() {
                           className="block px- py-2 text-sm text-tertiary hover:bg-gray-100"
                         >
                           <div className="flex justify-start gap-2">
-                            <img
-                              src="/src/assets/img/quanitive-icon.svg"
-                              alt="icon"
-                            />
+                            <img src={quanitiveIcon} alt="icon" />
                             <div> الخبرات النوعية</div>
                           </div>
                         </NavLink>
@@ -94,10 +91,7 @@ function Header() {
                           className="block px- py-2 text-sm text-tertiary hover:bg-gray-100"
                         >
                           <div className="flex justify-start gap-2">
-                            <img
-                              src="/src/assets/img/urben-design-icon.svg"
-                              alt="icon"
-                            />
+                            <img src={urbenDesignIcon} alt="icon" />
                             <div> التصميم العمراني </div>
                           </div>
                         </NavLink>
@@ -106,10 +100,7 @@ function Header() {
                           className="block px- py-2 text-sm text-tertiary hover:bg-gray-100"
                         >
                           <div className="flex justify-start gap-2">
-                            <img
-                              src="/src/assets/img/eng-management-icon.svg"
-                              alt="icon"
-                            />
+                            <img src={engManagementIcon} alt="icon" />
                             <div> الادارة الهندسية </div>
                           </div>
                         </NavLink>
@@ -131,7 +122,9 @@ function Header() {
                   <NavLink
                     to="/about"
                     className={({ isActive }) =>
-                      isActive ? "text-secondary font-bold text-nowrap" : "text-primary text-nowrap"
+                      isActive
+                        ? "text-secondary font-bold text-nowrap"
+                        : "text-primary text-nowrap"
                     }
                   >
                     من نحن
@@ -158,13 +151,12 @@ function Header() {
         {/* Mobile Menu */}
         {isOpen && (
           <>
-            <div className=" ">
-              {/* Blured layer */}
-              <div className="md:hidden reletive inset-   top-[20%]   h-[35.20rem] inset- bg-whit backdrop-blu z-30"></div>
+            <div className="">
+              {/* Blurred layer */}
+              <div className="md:hidden reletive inset- top-[20%] h-[35.20rem] inset- bg-whit backdrop-blu z-30"></div>
 
-              {/* menu container */}
-
-              <div className="md:hidden  top-0 pt-20 absolute h-[101%] font-camel  shadow-md font w-[60%] bg-accent   flex flex-col justify-between z-40">
+              {/* Menu container */}
+              <div className="md:hidden top-0 pt-20 absolute h-[101%] font-camel shadow-md font w-[60%] bg-accent flex flex-col justify-between z-40">
                 <div className="px-4 py-6 flex flex-col gap-6">
                   <ul className="flex flex-col items-start gap-6 text-primary font-bold">
                     {/* Home */}
@@ -178,10 +170,7 @@ function Header() {
                       >
                         الرئيسية
                       </NavLink>
-                      <img
-                        src="/src/assets/img/ArrowIconMobileMenu.svg"
-                        alt="Arrow Icon"
-                      />
+                      <img src={arrowIconMobileMenu} alt="Arrow Icon" />
                     </li>
 
                     {/* مجالاتنـا with Dropdown */}
@@ -201,7 +190,7 @@ function Header() {
                           مجالاتنـا
                         </NavLink>
                         <img
-                          src="/src/assets/img/ArrowIconMobileMenu.svg"
+                          src={arrowIconMobileMenu}
                           alt="Arrow Icon"
                           className={`transition-transform duration-300 ${
                             isMobileDropdownOpen ? "-rotate-90" : ""
@@ -210,7 +199,7 @@ function Header() {
                       </div>
                       {/* Mobile Dropdown Items */}
                       {isMobileDropdownOpen && (
-                        <ul className="mt-4 mb-3 border-b ml-4 space-y-4 text- text-primary font-thin">
+                        <ul className="mt-4 mb-3 border-b ml-4 space-y-4 text-primary font-thin">
                           <li>
                             <NavLink
                               to="/fields/UrbanPlanning"
@@ -218,10 +207,7 @@ function Header() {
                               className="block hover:text-secondary"
                             >
                               <div className="flex justify-start gap-2">
-                                <img
-                                  src="/src/assets/img/urben-icon.svg"
-                                  alt="icon"
-                                />
+                                <img src={urbenIcon} alt="icon" />
                                 <div className="">التخطيط الحضاري</div>
                               </div>
                             </NavLink>
@@ -233,10 +219,7 @@ function Header() {
                               className="block hover:text-secondary"
                             >
                               <div className="flex justify-start gap-2">
-                                <img
-                                  src="/src/assets/img/quanitive-icon.svg"
-                                  alt="icon"
-                                />
+                                <img src={quanitiveIcon} alt="icon" />
                                 <div> الخبرات النوعية</div>
                               </div>
                             </NavLink>
@@ -248,10 +231,7 @@ function Header() {
                               className="block hover:text-secondary"
                             >
                               <div className="flex justify-start gap-2">
-                                <img
-                                  src="/src/assets/img/urben-design-icon.svg"
-                                  alt="icon"
-                                />
+                                <img src={urbenDesignIcon} alt="icon" />
                                 <div> التصميم العمراني </div>
                               </div>
                             </NavLink>
@@ -263,10 +243,7 @@ function Header() {
                               className="block hover:text-secondary"
                             >
                               <div className="flex justify-start gap-2">
-                                <img
-                                  src="/src/assets/img/eng-management-icon.svg"
-                                  alt="icon"
-                                />
+                                <img src={engManagementIcon} alt="icon" />
                                 <div> الادارة الهندسية </div>
                               </div>
                             </NavLink>
@@ -286,10 +263,7 @@ function Header() {
                       >
                         أعمالنـا
                       </NavLink>
-                      <img
-                        src="/src/assets/img/ArrowIconMobileMenu.svg"
-                        alt="Arrow Icon"
-                      />
+                      <img src={arrowIconMobileMenu} alt="Arrow Icon" />
                     </li>
 
                     {/* About */}
@@ -303,10 +277,7 @@ function Header() {
                       >
                         من نحن
                       </NavLink>
-                      <img
-                        src="/src/assets/img/ArrowIconMobileMenu.svg"
-                        alt="Arrow Icon"
-                      />
+                      <img src={arrowIconMobileMenu} alt="Arrow Icon" />
                     </li>
                   </ul>
                 </div>
@@ -325,10 +296,7 @@ function Header() {
                     >
                       <div className="flex justify-between items-center">
                         <span>تواصل معنـا</span>
-                        <img
-                          src="/src/assets/img/ArrowIconWhite.svg"
-                          alt="Arrow Icon"
-                        />
+                        <img src={arrowIconWhite} alt="Arrow Icon" />
                       </div>
                     </NavLink>
                   </div>
