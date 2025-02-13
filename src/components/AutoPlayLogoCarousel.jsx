@@ -1,14 +1,14 @@
 import React from 'react';
 
-const logos = [
-  "/src/assets/img/logos/logo1.svg",
-  "/src/assets/img/logos/logo2.svg",
-  "/src/assets/img/logos/logo3.svg",
-  "/src/assets/img/logos/logo4.svg",
-  "/src/assets/img/logos/logo5.svg",
-  "/src/assets/img/logos/logo6.svg",
- 
-];
+// Import logos
+import logo1 from "/src/assets/img/logos/logo1.svg";
+import logo2 from "/src/assets/img/logos/logo2.svg";
+import logo3 from "/src/assets/img/logos/logo3.svg";
+import logo4 from "/src/assets/img/logos/logo4.svg";
+import logo5 from "/src/assets/img/logos/logo5.svg";
+import logo6 from "/src/assets/img/logos/logo6.svg";
+
+const logos = [logo1, logo2, logo3, logo4, logo5, logo6];
 
 function AutoPlayLogoCarousel() {
   return (

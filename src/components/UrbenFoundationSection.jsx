@@ -1,6 +1,14 @@
 import React, { useState } from "react";
 import MasonaryGrid from "./MasonaryGrid";
 
+// Import images
+import UrbenFoundationSectionImg from "/src/assets/img/UrbenFoundationSection-img.png";
+import ServiceIcon1 from "/src/assets/img/ServiceIcon1.svg";
+import UrbenFoundationSectionHIcon1 from "/src/assets/img/UrbenFoundationSectionH-Icon-1.svg";
+import UrbenFoundationSectionHIcon2 from "/src/assets/img/UrbenFoundationSectionH-Icon-2.svg";
+import ProjectWaletHeader1 from "/src/assets/img/ProjectWaletHeader1.svg";
+import ProjectWaletHeader2 from "/src/assets/img/ProjectWaletHeader2.svg";
+
 function UrbenFoundationSection({ tabsToShow }) {
   const [activeTab, setActiveTab] = useState(tabsToShow[0]); // Set the first tab as active by default
 
@@ -11,7 +19,7 @@ function UrbenFoundationSection({ tabsToShow }) {
       title: "تأسيس المراصد الحضرية",
       description:
         "إنشاء وتشغيل المراصد الحضرية لتحسين إدارة المدينة / توفير وربط البيانات",
-      img: "/src/assets/img/UrbenFoundationSection-img.png",
+      img: UrbenFoundationSectionImg,
       cardsGroup1: [
         { title: "تحليل الوضع الراهن", width: "w-1/2", textColor: "text-tertiary" },
         { title: "صناعة وقياس المؤشرات", width: "w-full", textColor: "text-tertiary" },
@@ -27,7 +35,7 @@ function UrbenFoundationSection({ tabsToShow }) {
       id: 2,
       title: "تطوير التوجيه الاستراتيجي للمناطق",
       description: "صناعة المفاهيم والموجهات التخطيطية.",
-      img: "/src/assets/img/ServiceIcon1.svg",
+      img: ServiceIcon1,
       cardsGroup1: [
         { title: "تحليل الوضع الراهن", width: "w-1/2", textColor: "text-tertiary" },
         { title: "صناعة وقياس المؤشرات", width: "w-full", textColor: "text-tertiary" },
@@ -43,7 +51,7 @@ function UrbenFoundationSection({ tabsToShow }) {
       id: 3,
       title: "  تصميم الوجهات التاريخية والسياحية",
       description: "تطوير وجهات سياحية وتاريخية مستدامة تجزب الزوار وتحافث على التراث المحلي",
-      img: "/src/assets/img/UrbenFoundationSection-img.png",
+      img: UrbenFoundationSectionImg,
       cardsGroup1: [
         { title: "صناعة القصة من خلال ربط الأبعاد المختلفة", width: "w-1/2", textColor: "text-tertiary" },
         { title: "تطوير مواقع تاريخية", width: "w-full", textColor: "text-tertiary" },
@@ -59,7 +67,7 @@ function UrbenFoundationSection({ tabsToShow }) {
       id: 4,
       title: "تصميم وتخطيط حركة الحشود",
       description: "تقديم حلول متكاملة لضمان سلامة الحشود بما يتوافق مع متطلبات المكان",
-      img: "/src/assets/img/UrbenFoundationSection-img.png",
+      img: UrbenFoundationSectionImg,
       cardsGroup1: [
         { title: "إعداد المخططات وتقييمها", width: "w-1/2", textColor: "text-tertiary" },
         { title: "تحليل المواقع والتأكد من جاهزيتها", width: "w-full", textColor: "text-tertiary" },
@@ -75,7 +83,7 @@ function UrbenFoundationSection({ tabsToShow }) {
       id: 5,
       title: "تطوير مرافق منظومة ضيوف الرحمن",
       description: "تقديم حلول لتطوير وإدارة المرافق ضيوف الرحمن لتحقيق تجربة روحاية مميزة",
-      img: "/src/assets/img/UrbenFoundationSection-img.png",
+      img: UrbenFoundationSectionImg,
       cardsGroup1: [
         { title: "الإشراف على التشغيل", width: "w-1/2", textColor: "text-tertiary" },
         { title: "تصميم المشاريع النوعية", width: "w-full", textColor: "text-tertiary" },
@@ -91,7 +99,7 @@ function UrbenFoundationSection({ tabsToShow }) {
       id: 6,
       title: "التصميم العمراني",
       description: "فهم احتياجات العميل وربطها بمحددات الموقع لتصميم الوظيفة المناسبة للمستخدم النهائي",
-      img: "/src/assets/img/UrbenFoundationSection-img.png",
+      img: UrbenFoundationSectionImg,
       cardsGroup1: [
         { title: "تحليل الوضع الراهن", width: "w-1/2", textColor: "text-tertiary" },
         { title: "صناعة وقياس المؤشرات", width: "w-full", textColor: "text-tertiary" },
@@ -103,11 +111,11 @@ function UrbenFoundationSection({ tabsToShow }) {
         { title: "إعداد قواعد البيانات", width: "w-full", textColor: "text-tertiary" },
       ],
     },
-      "الخدمات المساندة": {
+    "الخدمات المساندة": {
       id: 7,
       title: "الخدمات المساندة",
       description: "تقديم الأعمال المكملة لإتمام الإجراءات والعمليات",
-      img: "/src/assets/img/UrbenFoundationSection-img.png",
+      img: UrbenFoundationSectionImg,
       cardsGroup1: [
         { title: "استخراج رخص المنشئات", width: "w-1/2", textColor: "text-tertiary" },
         { title: "تصميم واعتماد المنشئات وفق معايير الأمن والسلامة", width: "w-full", textColor: "text-tertiary" },
@@ -123,7 +131,7 @@ function UrbenFoundationSection({ tabsToShow }) {
       id: 8,
       title: "إدارة المشاريع المتعثرة (PMO)",
       description: "تقييم المقاولات المتعثرة لإيجاد مواطن الخلل وطرق العلاج",
-      img: "/src/assets/img/UrbenFoundationSection-img.png",
+      img: UrbenFoundationSectionImg,
       cardsGroup1: [
         { title: "إدارة التكلفة", width: "w-1/2", textColor: "text-tertiary" },
         { title: "إدارة التشييد", width: "w-full", textColor: "text-tertiary" },
@@ -139,7 +147,7 @@ function UrbenFoundationSection({ tabsToShow }) {
       id: 9,
       title: "الإشراف على التنفيذ",
       description: "الإشراف على إنشاء وتشغيل المشاريع القائمة بما يضمن جودة العمل",
-      img: "/src/assets/img/UrbenFoundationSection-img.png",
+      img: UrbenFoundationSectionImg,
       cardsGroup1: [
         { title: "إدارة المواقع", width: "w-1/2", textColor: "text-tertiary" },
         { title: "الرصد والتوثيق", width: "w-full", textColor: "text-tertiary" },
@@ -155,22 +163,18 @@ function UrbenFoundationSection({ tabsToShow }) {
 
   return (
     <div className="bg-accent h-fit font-camel">
-
-
-       {/* Desktop */}
+      {/* Desktop */}
       <div className="hidden md:flex items-center justify-between pt-20 w-full">
-         {/* Left Side icon with ServicesHeader1 and h2 */}
-         <div className="hidden md:flex">
+        {/* Left Side icon with ServicesHeader1 and h2 */}
+        <div className="hidden md:flex">
           <img
-            src="/src/assets/img/UrbenFoundationSectionH-Icon-1.svg"
+            src={UrbenFoundationSectionHIcon1}
             alt="Services Header 1"
           />
         </div>
 
         {/* Tabs Display - Showing only specified tabs */}
         <div className="flex w-fit md:flex-row gap-5 items-center justify-center py-2 px-3 rounded-2xl bg-gray-100">
-
-        
           {tabsToShow.map((tabName) => (
             <p
               key={tabName}
@@ -186,24 +190,19 @@ function UrbenFoundationSection({ tabsToShow }) {
           ))}
         </div>
 
-
-
         {/* Right Side icon with ServicesHeader2 */}
         <div className="w">
           <img
-            src="/src/assets/img/UrbenFoundationSectionH-Icon-2.svg"
+            src={UrbenFoundationSectionHIcon2}
             alt="Services Header 2"
           />
         </div>
-
       </div>
 
       {/* Section Header mobile */}
       <div className="flex-col md:hidden items-center justify-between pt-20 w-full">
         {/* Tabs */}
         <div className="flex w-[90%] text-center mx-auto md:flex-row gap-5 items-center justify-center py-2 px-3 rounded-2xl bg-gray-100">
-
-        
           {tabsToShow.map((tabName) => (
             <p
               key={tabName}
@@ -223,7 +222,7 @@ function UrbenFoundationSection({ tabsToShow }) {
           {/* Left Side icon with ServicesHeader1 and h2 */}
           <div className="w-0 ">
             <img
-              src="/src/assets/img/UrbenFoundationSectionH-Icon-1.svg"
+              src={UrbenFoundationSectionHIcon1}
               alt="Services Header 1"
               loading="lazy"
             />
@@ -232,18 +231,13 @@ function UrbenFoundationSection({ tabsToShow }) {
           {/* Right Side icon with ServicesHeader2 */}
           <div className="w-1/3">
             <img
-              src="/src/assets/img/UrbenFoundationSectionH-Icon-2.svg"
+              src={UrbenFoundationSectionHIcon2}
               alt="Services Header 2"
               loading="lazy"
             />
           </div>
         </div>
       </div>
-
-
-
-
-      
 
       {/* Rest of your existing content */}
       <div className="md:m-base-m mx-5">
@@ -301,7 +295,7 @@ function UrbenFoundationSection({ tabsToShow }) {
           {/* Left Side with ServicesHeader1 and h2 */}
           <div className="w mt-4 relative">
             <img
-              src="/src/assets/img/ProjectWaletHeader1.svg"
+              src={ProjectWaletHeader1}
               alt="Services Header 1"
             />
             {/* Absolute positioned h2 */}
@@ -313,7 +307,7 @@ function UrbenFoundationSection({ tabsToShow }) {
           {/* Right Side with ServicesHeader2 */}
           <div>
             <img
-              src="/src/assets/img/ProjectWaletHeader2.svg"
+              src={ProjectWaletHeader2}
               alt="Services Header 2"
             />
           </div>
@@ -331,7 +325,7 @@ function UrbenFoundationSection({ tabsToShow }) {
           {/* Right Side with ServicesHeader2 */}
           <div className="w-1/3">
             <img
-              src="/src/assets/img/ProjectWaletHeader2.svg"
+              src={ProjectWaletHeader2}
               alt="Services Header 2"
             />
           </div>

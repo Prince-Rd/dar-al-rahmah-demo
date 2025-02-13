@@ -1,5 +1,11 @@
 import React, { Component } from "react";
 
+// Import all images
+import projectHeader1 from "../assets/img/ProjectHeader1.svg";
+import arrowDownIcon from "../assets/img/ArrowDownIcon.svg";
+import plusIcon from "../assets/img/PlusIcon.svg";
+import dimond from "../assets/img/Dimond.svg";
+
 export class ProjectMainHeader extends Component {
   constructor(props) {
     super(props);
@@ -55,7 +61,7 @@ export class ProjectMainHeader extends Component {
             {/* Left Side with ServicesHeader1 and h2 */}
             <div className="w-[30%] mt-4 relative">
               <img
-                src="/src/assets/img/ProjectHeader1.svg"
+                src={projectHeader1}
                 alt="Services Header 1"
                 loading="lazy"
               />
@@ -81,13 +87,13 @@ export class ProjectMainHeader extends Component {
 
                 <div className="flex gap-2 md:gap-4 w- px-2 md:px-7">
                   <img
-                    src="/src/assets/img/ArrowDownIcon.svg"
+                    src={arrowDownIcon}
                     alt=""
                     className="w-7 md:w-12 rotate-180 md:rotate-0"
                     loading="lazy"
                   />
                   <img
-                    src="/src/assets/img/PlusIcon.svg"
+                    src={plusIcon}
                     alt=""
                     className="w-7 md:w-12"
                     loading="lazy"
@@ -110,7 +116,7 @@ export class ProjectMainHeader extends Component {
                 </div>
                 <div className=" relative w-[80rem] md:w-[50rem] flex  justify-center">
                   <img
-                    src="/src/assets/img/Dimond.svg"
+                    src={dimond}
                     alt="icon"
                     className=" z-10"
                     loading="lazy"

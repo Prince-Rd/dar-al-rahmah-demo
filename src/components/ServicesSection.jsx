@@ -1,5 +1,30 @@
 import React, { useState } from "react";
 
+// Import all images
+import urbanPlanningImage from "../assets/img/urban-planning.png";
+import urbanPlanningEffect from "../assets/img/Urben-Ellipse.svg";
+import serviceIcon1 from "../assets/img/ServiceIcon1.svg";
+import serviceIcon2 from "../assets/img/ServiceIcon2.svg";
+import qualitativeOptionsImage from "../assets/img/qualitative-options.png";
+import qualitativeEllipse from "../assets/img/Qualitative-Ellipse.svg";
+import qualitativeIcon1 from "../assets/img/qualitativeIcon1.svg";
+import qualitativeIcon2 from "../assets/img/qualitativeIcon2.svg";
+import qualitativeIcon3 from "../assets/img/qualitativeIcon3.svg";
+import architecturalDesignImage from "../assets/img/architectural-design.png";
+import architecturalEllipse from "../assets/img/Architectural-Ellipse.svg";
+import architecturalIcon1 from "../assets/img/architecturalIcon1.svg";
+import engineeringManagementImage from "../assets/img/engineering-management.png";
+import engineeringEllipse from "../assets/img/Engeneering-Ellipse.svg";
+import engineeringIcon1 from "../assets/img/EngeneeringIcon1.svg";
+import engineeringIcon2 from "../assets/img/EngeneeringIcon2.svg";
+import engineeringIcon3 from "../assets/img/EngeneeringIcon3.svg";
+import servicesHeader1 from "../assets/img/ServicesHeader1.svg";
+import servicesHeader2 from "../assets/img/ServicesHeader2.svg";
+import line from "../assets/img/Line.svg";
+import horizontalLine from "../assets/img/HorozontalLine.svg";
+import servicesFooter1 from "../assets/img/ServicesFooter1.svg";
+import servicesFooter2 from "../assets/img/ServicesFooter2.svg";
+
 const tabs = [
   { id: "urban-planning", label: "التخطيط الحضري" },
   { id: "qualitative-options", label: "الخبرات النوعية" },
@@ -12,12 +37,12 @@ const serviceData = {
     title: "التخطيــط الحضري",
     description:
       "     نقدم خدمات التخطيط الحضري لتحسين جودة الحياة في المجتمعات الحضرية",
-    image: "/src/assets/img/urban-planning.png",
-    effect: "/src/assets/img/Urben-Ellipse.svg",
+    image: urbanPlanningImage,
+    effect: urbanPlanningEffect,
     subServices: [
       {
         title: "التوجيه الاستراتيجي للمناطق",
-        icon: "/src/assets/img/ServiceIcon1.svg",
+        icon: serviceIcon1,
         subSubServices: [
           " المسح الإجتماعي",
           "  صناعة وقياس المؤشرات",
@@ -29,7 +54,7 @@ const serviceData = {
       },
       {
         title: "تأسيس المراصد الحضرية",
-        icon: "/src/assets/img/ServiceIcon2.svg",
+        icon: serviceIcon2,
         subSubServices: [
           "  تحليل الوصول الشامل",
           " وضع الرؤى الإستراتيجية",
@@ -40,17 +65,16 @@ const serviceData = {
         ],
       },
     ],
-    hoverEffect: "/src/assets/img/Urban-Effect.svg",
   },
   "qualitative-options": {
     title: "الخبرات النوعية",
     description: "",
-    image: "/src/assets/img/qualitative-options.png",
-    effect: "/src/assets/img/Qualitative-Ellipse.svg",
+    image: qualitativeOptionsImage,
+    effect: qualitativeEllipse,
     subServices: [
       {
         title: "تصميم الوجهات التاريخية والسياحية",
-        icon: "/src/assets/img/qualitativeIcon1.svg",
+        icon: qualitativeIcon1,
         subSubServices: [
           "صناعة القصة من خلال ربط الأبعاد المختلفة",
           "تطوير مواقع تاريخية",
@@ -62,7 +86,7 @@ const serviceData = {
       },
       {
         title: "تصميم وتخطيط حركة الحشود",
-        icon: "/src/assets/img/qualitativeIcon2.svg",
+        icon: qualitativeIcon2,
         subSubServices: [
           "إعداد المخططات وتقييمها",
           "تحليل المواقع والتأكد من جاهزيتها",
@@ -74,7 +98,7 @@ const serviceData = {
       },
       {
         title: "تطوير مرافق منظومة ضيوف الرحمن",
-        icon: "/src/assets/img/qualitativeIcon3.svg",
+        icon: qualitativeIcon3,
         subSubServices: [
           "الإشراف على التشغيل",
           "تصميم المشاريع النوعية",
@@ -90,12 +114,12 @@ const serviceData = {
     title: "التصميم المعماري",
     description:
       "نؤمن بأن التصميم العمراني هو فن يجمع بين الابتكار والعملية. نعمل على إنشاء تصاميم مبتكرة تحقق التناغم بين احتياجات السكان والبيئة المبنية، مع التركيز على تطوير مساحات حضرية نابضة بالحياة ومستدامة تعكس هوية المجتمع المحلي.",
-    image: "/src/assets/img/architectural-design.png",
-    effect: "/src/assets/img/Architectural-Ellipse.svg",
+    image: architecturalDesignImage,
+    effect: architecturalEllipse,
     subServices: [
       {
         title: "تصميم المباني",
-        icon: "/src/assets/img/architecturalIcon1.svg",
+        icon: architecturalIcon1,
         subSubServices: [
           "التصميم العمراني",
           "تصميم وإعتماد المخططات",
@@ -112,12 +136,12 @@ const serviceData = {
     title: "الإدارة الهندسية",
     description:
       "نقدم حلولاً في الإدارة الهندسية تشمل تخطيط وتنفيذ ومراقبة المشاريع القائمة والمتعثرة لتحقيق أهداف العملاء بكفاءة عالية. فريقنا المتمرس يضمن إنجاز المشاريع بأعلى مستويات الجودة وفي الوقت المحدد.",
-    image: "/src/assets/img/engineering-management.png",
-    effect: "/src/assets/img/Engeneering-Ellipse.svg",
+    image: engineeringManagementImage,
+    effect: engineeringEllipse,
     subServices: [
       {
         title: " الخدمات المساندة",
-        icon: "/src/assets/img/EngeneeringIcon3.svg",
+        icon: engineeringIcon3,
         subSubServices: [
           "استخراج رخص المنشئات",
           "تصميم وإعتماد المنشئات وفق معايير الأمن والسلامة",
@@ -129,7 +153,7 @@ const serviceData = {
       },
       {
         title: " إدارة المشاريع المتعثرة (PMO)",
-        icon: "/src/assets/img/EngeneeringIcon2.svg",
+        icon: engineeringIcon2,
         subSubServices: [
           "إدارة التكلفة",
           "إدارة التشييد",
@@ -141,7 +165,7 @@ const serviceData = {
       },
       {
         title: "الإشراف على التنفيذ",
-        icon: "/src/assets/img/EngeneeringIcon1.svg",
+        icon: engineeringIcon1,
         subSubServices: [
           "إدارة الموقع",
           "الرصد والتوثيق",
@@ -174,7 +198,7 @@ function ServicesSection() {
         {/* Left Side with ServicesHeader1 and h2 */}
         <div className="w-1/3 md:mt-6 relative">
           <img
-            src="/src/assets/img/ServicesHeader1.svg"
+            src={servicesHeader1}
             alt="Services Header 1"
             loading="lazy"
           />
@@ -187,7 +211,7 @@ function ServicesSection() {
         {/* Right Side with ServicesHeader2 */}
         <div className="w-1/3">
           <img
-            src="/src/assets/img/ServicesHeader2.svg"
+            src={servicesHeader2}
             alt="Services Header 2"
             loading="lazy"
           />
@@ -199,14 +223,14 @@ function ServicesSection() {
         <aside className="order-1 flex justify-center md:justify-normal lg:order-1 w-full lg:w-[20%] pt-32 md:pt-0 relative">
           {/* Line (SVG) */}
           <img
-            src="/src/assets/img/Line.svg"
+            src={line}
             alt="line"
             className="absolute right-[0.4rem] top-2 hidden lg:flex h-[95%] w- z-10"
             loading="lazy"
           />
           {/* Line (SVG) mobile */}
           <img
-            src="/src/assets/img/HorozontalLine.svg"
+            src={horizontalLine}
             alt="line"
             className="absolute right-[0 top-[27%]  md:-mt-[2.3rem]  lg:hidden h-full w- z-10"
             loading="lazy"
@@ -353,7 +377,7 @@ function ServicesSection() {
         {/* Right Side with ServicesFooter2 */}
         <div className="md:w-1/3  w-24 m-base-m b-20">
           <img
-            src="/src/assets/img/ServicesFooter2.svg"
+            src={servicesFooter2}
             alt="Services Header 2"
             loading="lazy"
             className="hidden md:flex"
@@ -362,7 +386,7 @@ function ServicesSection() {
         {/* Left Side with ServicesFooter1 and h2 */}
         <div className="w-1/3 md:w- mt-4   flex justify-end">
           <img
-            src="/src/assets/img/ServicesFooter1.svg"
+            src={servicesFooter1}
             alt="Services Header 1"
             loading="lazy"
           />
