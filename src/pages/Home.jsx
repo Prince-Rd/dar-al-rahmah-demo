@@ -7,6 +7,8 @@ import MasonaryGrid from "../components/MasonaryGrid";
 import AutoPlayLogoCarousel from "../components/AutoPlayLogoCarousel";
 import ProjectMainHeader from "../components/ProjectMainHeader";
 import { Link } from "react-router-dom";
+import frame1 from "../assets/img/Frame-1.svg";
+import frame2 from "../assets/img/Frame-2.svg";
 
 function Home() {
   return (
@@ -28,13 +30,13 @@ function Home() {
           <div className="hidden md:flex absolute inset-0 top-28  overflow-hidden  z-10">
             {/* Icon 1 */}
             <div className="absolute top-[35%] left-1/3 mx-auto  translate-x-0  right-3/4  w-96 w animate-float animation-delay-3000">
-              <img src="/src/assets/img/Frame-1.svg" alt="Frame1" loading="lazy" />
+              <img src={frame1} alt="Frame1" loading="lazy" />
               
             </div>
 
             {/* Icon 2 */}
-            <div className="absolute top-[10%] right-[45%] animate-floatDiagonal w-60 animation-delay-4000">
-              <img src="/src/assets/img/Frame-2.svg" alt="Frame2"  loading="lazy"/>
+            <div className="absolute top-[10%]  right-[45%] animate-floatDiagonal w-60 animation-delay-4000">
+              <img src={frame2} alt="Frame2"  loading="lazy"/>
             </div>
 
             {/* Icon 3 */}
