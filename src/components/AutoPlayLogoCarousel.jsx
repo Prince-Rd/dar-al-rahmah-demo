@@ -1,6 +1,6 @@
 import React from 'react';
 
-// Import logos
+// Import all logos
 import logo1 from "/src/assets/img/logos/logo1.svg";
 import logo2 from "/src/assets/img/logos/logo2.svg";
 import logo3 from "/src/assets/img/logos/logo3.svg";
