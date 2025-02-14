@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import MasonaryGrid from "./MasonaryGrid";
 
 // Import images
-import UrbenFoundationSectionImg from "/src/assets/img/UrbenFoundationSection-img.png";
-import ServiceIcon1 from "/src/assets/img/ServiceIcon1.svg";
-import UrbenFoundationSectionHIcon1 from "/src/assets/img/UrbenFoundationSectionH-Icon-1.svg";
-import UrbenFoundationSectionHIcon2 from "/src/assets/img/UrbenFoundationSectionH-Icon-2.svg";
-import ProjectWaletHeader1 from "/src/assets/img/ProjectWaletHeader1.svg";
-import ProjectWaletHeader2 from "/src/assets/img/ProjectWaletHeader2.svg";
+import UrbenFoundationSectionImg from "../assets/img/UrbenFoundationSection-img.png";
+import ServiceIcon1 from "../assets/img/ServiceIcon1.svg";
+import UrbenFoundationSectionHIcon1 from "../assets/img/UrbenFoundationSectionH-Icon-1.svg";
+import UrbenFoundationSectionHIcon2 from "../assets/img/UrbenFoundationSectionH-Icon-2.svg";
+import ProjectWaletHeader1 from "../assets/img/ProjectWaletHeader1.svg";
+import ProjectWaletHeader2 from "../assets/img/ProjectWaletHeader2.svg";
 
 function UrbenFoundationSection({ tabsToShow }) {
   const [activeTab, setActiveTab] = useState(tabsToShow[0]); // Set the first tab as active by default

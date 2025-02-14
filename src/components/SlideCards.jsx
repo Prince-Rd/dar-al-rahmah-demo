@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 
 // Import images
-import slide1 from "/src/assets/img/slides/slide1.png";
-import mobileSlide1 from "/src/assets/img/slides/mobileSlide1.png";
-import slide2 from "/src/assets/img/slides/slide2.png";
-import mobileSlide2 from "/src/assets/img/slides/mobileSlide2.png";
-import slide3 from "/src/assets/img/slides/slide3.png";
-import mobileSlide3 from "/src/assets/img/slides/mobileSlide3.png";
+import slide1 from "../assets/img/slides/slide1.png";
+import mobileSlide1 from "../assets/img/slides/mobileSlide1.png";
+import slide2 from "../assets/img/slides/slide2.png";
+import mobileSlide2 from "../assets/img/slides/mobileSlide2.png";
+import slide3 from "../assets/img/slides/slide3.png";
+import mobileSlide3 from "../assets/img/slides/mobileSlide3.png";
 
 // Import arrow icon
-import WhiteArrow from "/src/assets/img/WhiteArrow.svg";
+import WhiteArrow from "../assets/img/WhiteArrow.svg";
 
 const cards = [
   {
